@@ -1,6 +1,6 @@
 import type { Article, NewsResponse, FilterOptions } from "@/types"
 
-const GNEWS_API_KEY = "7c8f439628e1364d1ce3f749e02b7318"
+const GNEWS_API_KEY = "13f2b37b4d0277aef2d546a40e2dc554"
 const GNEWS_BASE_URL = "https://gnews.io/api/v4"
 
 // Type definitions for API responses
