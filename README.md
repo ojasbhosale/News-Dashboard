@@ -55,21 +55,21 @@ A comprehensive news analytics and payout management platform built with Next.js
 ### Installation
 
 1. **Clone the repository**
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/newsanalytics-dashboard.git
 cd newsanalytics-dashboard
-\`\`\`
+```
 
 2. **Install dependencies**
-\`\`\`bash
+```bash
 npm install
 # or
 yarn install
-\`\`\`
+```
 
 3. **Environment Setup**
 Create a `.env.local` file in the root directory:
-\`\`\`env
+```env
 # GNews API Configuration
 GNEWS_API_KEY=your_gnews_api_key_here
 
@@ -82,14 +82,14 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 GITHUB_CLIENT_ID=your_github_client_id
 GITHUB_CLIENT_SECRET=your_github_client_secret
-\`\`\`
+```
 
 4. **Run the development server**
-\`\`\`bash
+```bash
 npm run dev
 # or
 yarn dev
-\`\`\`
+```
 
 5. **Open your browser**
 Navigate to [http://localhost:3000](http://localhost:3000)
@@ -208,14 +208,14 @@ const totalEarnings = payoutData.reduce((sum, p) => sum + p.total, 0)
 ```
 
 ### Exporting Data
-\`\`\`typescript
+```typescript
 // Export payout report as CSV
 await exportData({
   format: "csv",
   data: payoutData,
   includeCharts: true
 })
-\`\`\`
+```
 
 ## 🚀 Deployment
 
