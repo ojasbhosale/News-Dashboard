@@ -103,7 +103,7 @@ For testing purposes, use these demo credentials:
 
 ## 📁 Project Structure
 
-\`\`\`
+```bash
 newsanalytics-dashboard/
 ├── app/                    # Next.js 14 App Router
 │   ├── api/               # API routes
@@ -127,7 +127,7 @@ newsanalytics-dashboard/
 │   └── utils.ts         # Helper functions
 ├── types/               # TypeScript type definitions
 └── hooks/               # Custom React hooks
-\`\`\`
+```
 
 ## 🛠️ Technology Stack
 
@@ -165,13 +165,13 @@ The application includes intelligent rate limiting for the GNews API:
 
 ### Theme Configuration
 Customize the theme in `app/globals.css`:
-\`\`\`css
+```css
 :root {
   --primary: 221.2 83.2% 53.3%;
   --secondary: 210 40% 96%;
   /* Add your custom colors */
 }
-\`\`\`
+```
 
 ## 📊 API Endpoints
 
@@ -189,7 +189,7 @@ Customize the theme in `app/globals.css`:
 ## 🎯 Usage Examples
 
 ### Searching News
-\`\`\`typescript
+```typescript
 // Search for technology articles from the last week
 const filters = {
   query: "technology",
@@ -198,14 +198,14 @@ const filters = {
   sortBy: "relevance"
 }
 await searchArticles(filters)
-\`\`\`
+```
 
 ### Calculating Payouts
-\`\`\`typescript
+```typescript
 // Calculate payouts for articles
 const payoutData = calculatePayouts(articles)
 const totalEarnings = payoutData.reduce((sum, p) => sum + p.total, 0)
-\`\`\`
+```
 
 ### Exporting Data
 \`\`\`typescript
@@ -284,5 +284,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
     <a href="#top">Back to top</a>
   </p>
 </div>
-\`\`\`
+```
 
